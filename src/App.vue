@@ -1,5 +1,5 @@
 <template>
-  <Header title="Note Taking App" />
+  <Header title="Save Note" />
 
   <router-view></router-view>
 
