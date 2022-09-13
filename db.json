@@ -1,3 +1,11 @@
 {
-  "notes": []
+  "notes": [
+    {
+      "title": "About this app",
+      "text": "This is a simple note saving web app.\n\nUsed technologies are :\n- Vue.js\n- JavaScript\n- Node.js\n- json-server (used as server)\n\nMade by Kalpa kavindu. Completed on Tuesday, September 13, 2022",
+      "starred": false,
+      "day": "Edited • Wed, 13 Sep - 06:17pm",
+      "id": 1
+    }
+  ]
 }

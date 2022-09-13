@@ -2,6 +2,7 @@ import { createRouter, createWebHistory } from 'vue-router';
 import HomeView from '../views/HomeView.vue';
 import AboutView from '../views/AboutView.vue';
 import AddNoteView from '../views/AddNoteView.vue';
+import EditNoteView from '../views/EditNoteView.vue';
 
 const routes = [
 	{
@@ -21,6 +22,11 @@ const routes = [
 		path: '/add',
 		name: 'create',
 		component: AddNoteView,
+	},
+	{
+		path: '/edit/:id',
+		name: 'edit',
+		component: EditNoteView,
 	},
 ];
 

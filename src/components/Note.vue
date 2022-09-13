@@ -6,7 +6,9 @@
     <h3>
       {{ note.title }}
       <div>
-        <i class="fa-solid fa-pencil"></i>
+        <router-link :to="'/edit/' + note.id">
+          <i class="fa-solid fa-pencil"></i>
+        </router-link>
         <i @click="$emit('delete-note', note.id)" class="fa-solid fa-times"></i>
       </div>
     </h3>
@@ -39,6 +41,9 @@ section {
   border-radius: 10px;
   margin: 10px;
 }
+a {
+  text-decoration: none;
+}
 h3 {
   display: flex;
   justify-content: space-between;
@@ -64,21 +69,19 @@ h3 i:active {
 h3 .fa-times {
   background: #ff5c5c;
 }
-h3 .fa-pencil {
+h3 a .fa-pencil {
   background: #a1a1ff;
 }
 h3 .fa-times:hover {
   background: #ff4040;
 }
-h3 .fa-pencil:hover {
+h3 a .fa-pencil:hover {
   background: #7070ff;
 }
 p {
   margin: 15px auto;
   width: 90%;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+  white-space: pre-line;
 }
 .note-footer {
   font-size: 0.9em;
