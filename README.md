@@ -22,3 +22,7 @@ npm run serve #for start project
 ```
 npm run build
 ```
+
+<center> 
+<img src='./preview.jpg' alt='Preview of the app' />
+</center>
